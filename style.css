@@ -6,6 +6,7 @@
 
 .title {
     font-size: 3.5rem;
+    color: white;
 }
 
 .top,
@@ -17,5 +18,101 @@
 }
 
 .todo_input {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    border-radius: 5px;
+}
+
+.add_btn {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.add_btn:hover {
+    background: green;
+    color: white;
+    border: none;
+}
+
+body {
+    background-image: url(background.png);
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px;
+    border-radius: 5px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.deleteBtn {
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.deleteBtn:hover {
+    background: red;
+    color: white;
+}
+
+.checkBtn {
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.checkBtn:hover {
+    background: green;
+    color: white;
+}
+
+.fa-trash, 
+.fa-check-square {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
